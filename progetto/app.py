@@ -19,7 +19,7 @@ def prova():
 
 @app.route("/dataset")
 def get():
-    uss = mongo.db.stazioni.find()
+    uss = mongo.db.stazioni_aggioirnate.find()
     resp = json_util.dumps(uss)
     return Response(resp, mimetype = 'application/json') 
 
@@ -27,14 +27,14 @@ def get():
 def onedata(string):
     # GET a specific data by name
     if request.method == 'GET':
-        data = mongo.db.stazioni.find({'name': string})
+        data = mongo.db.stazioni_aggioirnate.find({'name': string})
         resp = json_util.dumps(data)
         return Response(resp, mimetype = 'application/json') 
 
 @app.route('/markers', methods=['GET'])
 def markersGet():
         points = []
-        result = mongo.db.stazioni.find().limit(230)
+        result = mongo.db.stazioni_aggioirnate.find().limit(100)
         for i in result:
             points.append({
                 "Coordinates": {
