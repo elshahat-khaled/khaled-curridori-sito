@@ -34,7 +34,7 @@ def onedata(string):
 @app.route('/markers', methods=['GET'])
 def markersGet():
         points = []
-        result = mongo.db.stazioni_aggioirnate.find().limit(100)
+        result = mongo.db.stazioni_aggioirnate.find().limit(250)
         for i in result:
             points.append({
                 "Coordinates": {

@@ -8,5 +8,5 @@
 - pip install flask-cors
 - pip install flask-restful
 - pip install flask-pymongo
-- pip installpymongo
+- pip install pymongo
 - flask run
