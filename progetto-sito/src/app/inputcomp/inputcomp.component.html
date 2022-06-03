@@ -1,15 +1,12 @@
 <ul *ngFor="let vet of listaDati" class=" container list">
-    <span class="span">MEDICO: </span>{{vet.id}}<br>
-    <span class="span">TIPOLOGIA: </span>{{vet.name}}<br>
-    <span class="span">SPECIALIZZAZIONE: </span>{{vet.name_norm}}<br>
-    <span class="span">DISTRETTO: </span>{{vet.uic}}<br>
-    <span class="span">COMUNE: </span>{{vet.parent_station_id}}<br>
-    <span class="span">INDIRIZZO: </span>{{vet.country}}<br>
-    <span class="span">ASSOCIAZIONE: </span>{{vet.time_zone}}<br>
-    <span class="span">ID: </span>{{vet.is_city}}<br>
-    <span class="span">AMBITO: </span>{{vet.is_main_station}}
-    <span class="span">MUNICIPIO: </span>{{vet.is_airport}}<br>
-    <span class="span">NIL: </span>{{vet.entur_id}}<br>
-    <span class="span">LONG_X: </span>{{vet.entur_is_enabled}}<br>
+    <span class="span">_id: </span>{{vet.id}}<br>
+    <span class="span">Nome Stazione: </span>{{vet.name}}<br>
+    <span class="span">NOME: </span>{{vet.name_norm}}<br>
+    <span class="span">Paese: </span>{{vet.country}}<br>
+    <span class="span">Continente: </span>{{vet.time_zone}}<br>
+    <span class="span">Stazione principale: </span>{{vet.is_city}}<br>
+    <span class="span">Stazione aeroportuale: </span>{{vet.is_airport}}<br>
+    <span class="span">Latitudine: </span>{{vet.latitude}}<br>
+    <span class="span">Longitudine: </span>{{vet.longitude}}<br>
     <hr>
 </ul>
